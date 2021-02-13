@@ -17,7 +17,7 @@ def blocking_function(duration):
 
 root = tk.Tk()
 
-popup = TaskPopup(root, func=blocking_function, args=(1000,), caption="Loading...")
+popup = TaskPopup(root, func=blocking_function, args=(2,), caption="Loading...")
 popup.start()
 
 root.wait_window(popup.top_level)
